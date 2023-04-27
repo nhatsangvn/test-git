@@ -5,5 +5,5 @@ version: 0.1.0
 appVersion: 0.0.1
 dependencies:
 - name: anvil
-  repository: https://vcr-hcm03.vngcloud.vn/public
+  repository: oci://vcr-hcm03.vngcloud.vn/public
   version: 0.1.0
