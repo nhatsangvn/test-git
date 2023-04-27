@@ -6,4 +6,4 @@ appVersion: 1.24
 dependencies:
 - name: anvil
   repository: oci://vcr-hcm03.vngcloud.vn/public
-  version: 0.1.0
+  version: 0.2.0
