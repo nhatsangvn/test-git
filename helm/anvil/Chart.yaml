@@ -2,7 +2,7 @@ apiVersion: v2
 name: anvil
 description: A surprise to catch something speedy.
 version: 0.1.0
-appVersion: 0.0.1
+appVersion: 1.24
 dependencies:
 - name: anvil
   repository: oci://vcr-hcm03.vngcloud.vn/public
