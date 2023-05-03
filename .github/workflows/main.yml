@@ -15,6 +15,7 @@ jobs:
         with:
           fetch-depth: 100
       - uses: paulhatch/semantic-version@v5.0.2
+        id: tag_version_develop
         with:
           # The prefix to use to identify tags
           tag_prefix: "v"
