@@ -46,4 +46,4 @@ jobs:
           enable_prerelease_mode: false
       - name: Echo
         run: |
-          echo ${{ steps.tag_version_develop.outputs }}
+          printf "${{ steps.tag_version_develop.outputs }}"
