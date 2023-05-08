@@ -6,7 +6,7 @@ on:
       - main
 env:
   context: src
-  enabled_versioning: "no-truea"
+  enabled_versioning: true
 
 jobs:
   build:
