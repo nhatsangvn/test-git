@@ -45,6 +45,7 @@ jobs:
           # If enabled, when the major version is 0, major releases will be treated as minor and minor as patch. Note that the version_type output is unchanged.
           enable_prerelease_mode: false
       - name: Tag Release (vX.Y.Z)
+        if: ${{ steps.tag_version_develop.outputs.version_tag != ''}}
         run: |
           git tag ${{ steps.tag_version_develop.outputs.version_tag }}
           git push origin ${{ steps.tag_version_develop.outputs.version_tag }}
