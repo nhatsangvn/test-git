@@ -6,6 +6,7 @@ on:
       - main
 env:
   context: src
+  enabled_versioning: true
 
 jobs:
   build:
@@ -15,6 +16,7 @@ jobs:
         with:
           fetch-depth: 100
       - uses: paulhatch/semantic-version@v5.0.2
+        if: ${{ env.enabled_versioning == true }}
         id: tag_version_develop
         with:
           # The prefix to use to identify tags
